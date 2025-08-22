@@ -544,84 +544,120 @@
 
 
     <!-- FAQ -->
-    <section class="py-16 bg-gray-50">
+    <section class="py-20 bg-white">
         <div class="container mx-auto px-4 max-w-4xl">
-            <h2 class="text-3xl font-bold text-center mb-12">FAQ</h2>
+            <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
             
             <div class="space-y-4">
-                <div class="bg-white p-6 rounded-lg">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-semibold">What is dLogos?</h3>
-                        <span class="text-2xl">+</span>
-                    </div>
-                </div>
+                <details class="bg-gray-50 rounded-lg p-6 cursor-pointer group">
+                    <summary class="flex justify-between items-center font-semibold text-lg">
+                        <span>What is dLogos?</span>
+                        <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-700">
+                        dLogos is the first audience-participation platform that turns podcast guest selection into a public, trackable movement. 
+                        We empower fans to nominate dream guests, rally their communities, and shape the conversations that matter.
+                    </p>
+                </details>
                 
-                <div class="bg-white p-6 rounded-lg">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-semibold">How does the nomination process work?</h3>
-                        <span class="text-2xl">+</span>
-                    </div>
-                </div>
+                <details class="bg-gray-50 rounded-lg p-6 cursor-pointer group">
+                    <summary class="flex justify-between items-center font-semibold text-lg">
+                        <span>How does the nomination process work?</span>
+                        <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-700">
+                        Connect your X account, browse partnered podcasts, and nominate your dream guest. Share your nomination to gather supporters. 
+                        When nominations reach critical mass, podcasts take notice and conversations happen. Every supporter is verified to ensure authentic community backing.
+                    </p>
+                </details>
                 
-                <div class="bg-white p-6 rounded-lg">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-semibold">Can I nominate multiple speakers?</h3>
-                        <span class="text-2xl">+</span>
-                    </div>
-                </div>
+                <details class="bg-gray-50 rounded-lg p-6 cursor-pointer group">
+                    <summary class="flex justify-between items-center font-semibold text-lg">
+                        <span>Do podcasts actually listen to nominations?</span>
+                        <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-700">
+                        Yes! We've facilitated 437+ successful nominations that became real episodes. Our partnered podcasts actively monitor nominations 
+                        because they value authentic fan input. High-vote nominations create undeniable social proof that helps hosts book dream guests.
+                    </p>
+                </details>
                 
-                <div class="bg-white p-6 rounded-lg">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-semibold">How are winners selected?</h3>
-                        <span class="text-2xl">+</span>
-                    </div>
-                </div>
+                <details class="bg-gray-50 rounded-lg p-6 cursor-pointer group">
+                    <summary class="flex justify-between items-center font-semibold text-lg">
+                        <span>How do I become a Dialogue Champion?</span>
+                        <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-700">
+                        Start nominating guests and sharing your picks. As your nominations gain support and some become real episodes, 
+                        you'll earn recognition, badges, and influence within the community. Top champions get early access to new features and direct input on platform development.
+                    </p>
+                </details>
+                
+                <details class="bg-gray-50 rounded-lg p-6 cursor-pointer group">
+                    <summary class="flex justify-between items-center font-semibold text-lg">
+                        <span>Is it free to participate?</span>
+                        <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-700">
+                        Yes! Creating nominations, voting, and participating in the community is completely free. 
+                        We believe in democratizing podcast curation and making it accessible to all fans who want to shape culture.
+                    </p>
+                </details>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white py-12">
+    <footer class="bg-black text-white py-16">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div>
+                <div class="md:col-span-2">
                     <div class="flex items-center space-x-2 mb-4">
-                        <img src="/assets/dLogos_gold.svg" alt="dLogos" class="w-6 h-6">
-                        <span class="font-bold">dLogos</span>
+                        <img src="/assets/dLogos_gold.svg" alt="dLogos" class="w-8 h-8">
+                        <span class="font-bold text-xl">dLogos</span>
                     </div>
-                    <p class="text-sm text-gray-400">Shape the dialogues that shape the future</p>
+                    <p class="text-gray-400 mb-4 max-w-md">
+                        The first audience-participation platform that turns podcast guest selection into a public, 
+                        trackable, and shareable movement. DJ the zeitgeist.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
                 </div>
                 
                 <div>
-                    <h4 class="font-semibold mb-4">HOW</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li>About</li>
-                        <li>Process</li>
-                        <li>Community</li>
+                    <h4 class="font-semibold mb-4 text-gray-300">PLATFORM</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">How It Works</a></li>
+                        <li><a href="#" class="hover:text-white transition">Browse Campaigns</a></li>
+                        <li><a href="#" class="hover:text-white transition">Success Stories</a></li>
+                        <li><a href="#" class="hover:text-white transition">Leaderboard</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="font-semibold mb-4">PARTNERS</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li>Podcasts</li>
-                        <li>Media</li>
-                        <li>Organizations</li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">RESOURCES</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li>FAQ</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
+                    <h4 class="font-semibold mb-4 text-gray-300">COMPANY</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Partner With Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
                     </ul>
                 </div>
             </div>
             
-            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
                 <p>© 2024 dLogos. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition">Cookie Policy</a>
+                </div>
             </div>
         </div>
     </footer>

@@ -1,16 +1,19 @@
-# dLogos Landing Page - Lo-Fi Wireframe
+# dLogos Landing Page - DJ the Zeitgeist
 
-A black and white wireframe landing page for dLogos - the audience participation platform for podcasts.
+A compelling landing page for dLogos - the first audience-participation platform that turns podcast guest selection into a public, trackable movement.
 
 ## Features
 
-- Hero section with dynamic messaging about shaping dialogues
-- Feature showcase with nomination cards
-- Trending & ongoing podcasts section
-- Past podcasts gallery
-- Partners section
-- FAQ section
-- Responsive design using Tailwind CSS
+- **Hero Section**: "DJ the Zeitgeist" messaging with social proof
+- **How It Works**: Three core value propositions for fans:
+  - 🎛️ Curate the Zeitgeist - Transform from passive listener to active curator
+  - 🎙️ Your Voice, Amplified - Get featured across podcast networks
+  - 🏆 Become a Dialogue Champion - Build reputation as a cultural tastemaker
+- **Live Nominations**: Featured campaigns with real-time voting
+- **Success Stories**: Showcasing fan nominations that became legendary conversations
+- **Partnered Podcasts**: Top shows trusting fans to shape conversations
+- **Interactive FAQ**: Expandable questions with detailed answers
+- **Compelling CTAs**: Multiple entry points to start participating
 
 ## Installation
 
