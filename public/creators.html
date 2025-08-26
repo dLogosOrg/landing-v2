@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Podcast Creators - dLogos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .placeholder-circle {
+            width: 40px;
+            height: 40px;
+            background-color: #d1d5db;
+            border-radius: 50%;
+        }
+        .placeholder-rect {
+            background-color: #e5e7eb;
+            border-radius: 4px;
+        }
+        .feature-card {
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+        }
+        .placeholder-podcast {
+            width: 100px;
+            height: 100px;
+            background-color: #d1d5db;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="/assets/dLogos_gold.svg" alt="dLogos" class="w-8 h-8">
+                <span class="font-bold text-xl">dLogos</span>
+            </div>
+            <nav class="flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-gray-900">HOME</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">ALL CAMPAIGNS</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">ABOUT US</a>
+                <button class="bg-gray-900 text-white px-4 py-2 rounded">GET STARTED →</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-gray-900 to-gray-800 text-white py-20 lg:py-28">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div>
+                    <div class="mb-6">
+                        <span class="text-sm font-semibold text-purple-400 uppercase tracking-wider">For Podcast Creators</span>
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Transform Listeners Into <span class="text-purple-400">Active Amplifiers</span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl mb-6 font-semibold text-gray-300">
+                        Turn scattered audience feedback into organized, verifiable momentum
+                    </p>
+                    <p class="text-lg text-gray-400 mb-8 max-w-lg">
+                        dLogos helps growth-stage podcasters turn listeners into an organized, cause-aligned amplification network—activated across channels with coordinated campaigns, supported by AI-enhanced insights, and measured for real audience lift.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
+                        <button class="bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-700 transition">
+                            Join the Platform →
+                        </button>
+                        <button class="border-2 border-purple-400 text-purple-400 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-400 hover:text-gray-900 transition">
+                            Watch Demo
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Right Visual -->
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-gray-700 to-gray-600 rounded-2xl p-8 relative overflow-hidden border border-gray-500">
+                        <!-- Growth Chart Mockup -->
+                        <div class="bg-white rounded-xl shadow-lg p-6 mb-4 text-gray-900">
+                            <h3 class="font-bold mb-4">Your Show Growth</h3>
+                            <div class="grid grid-cols-3 gap-4 text-center">
+                                <div>
+                                    <p class="text-2xl font-bold text-purple-600">2.4K</p>
+                                    <p class="text-xs text-gray-600">Monthly Downloads</p>
+                                    <p class="text-xs text-green-600">+42%</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold text-blue-600">847</p>
+                                    <p class="text-xs text-gray-600">Fan Nominations</p>
+                                    <p class="text-xs text-green-600">+156%</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold text-green-600">23</p>
+                                    <p class="text-xs text-gray-600">Guests Booked</p>
+                                    <p class="text-xs text-green-600">+18</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating elements -->
+                        <div class="absolute top-4 right-4 w-3 h-3 bg-purple-400 rounded-full opacity-60"></div>
+                        <div class="absolute bottom-4 left-4 w-2 h-2 bg-purple-300 rounded-full opacity-40"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Why Growth-Stage Podcasters Choose dLogos</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Unlike social comments, Google Forms, or Discord polls—which stay private, fragmented, and easy to ignore—dLogos makes your audience's voice visible, credible, and actionable.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Feature 1 -->
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 feature-card border border-purple-200">
+                    <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-white text-xl">📊</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Visible Fan Demand</h3>
+                    <p class="text-gray-700 mb-4">
+                        Transform scattered audience feedback into public, verifiable signals that help you book better guests and attract new listeners.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="mr-2">•</span>Public nomination leaderboards</li>
+                        <li class="flex items-start"><span class="mr-2">•</span>Verified fan voting system</li>
+                        <li class="flex items-start"><span class="mr-2">•</span>Shareable momentum metrics</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 feature-card border border-blue-200">
+                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-white text-xl">🎯</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Guest Booking Leverage</h3>
+                    <p class="text-gray-700 mb-4">
+                        Show potential guests the verified audience demand. Turn fan requests into booking power with quantifiable social proof.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="mr-2">•</span>Guest outreach templates</li>
+                        <li class="flex items-start"><span class="mr-2">•</span>Fan testimonial compilation</li>
+                        <li class="flex items-start"><span class="mr-2">•</span>Social proof metrics</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 feature-card border border-green-200">
+                    <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-white text-xl">🚀</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Cultural Positioning</h3>
+                    <p class="text-gray-700 mb-4">
+                        Place your show in the zeitgeist with trending conversations. Let fans help curate content that drives cultural relevance.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="mr-2">•</span>Trending topic insights</li>
+                        <li class="flex items-start"><span class="mr-2">•</span>Cultural moment tracking</li>
+                        <li class="flex items-start"><span class="mr-2">•</span>Cross-platform amplification</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-8 feature-card border border-orange-200">
+                    <div class="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-white text-xl">📈</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Audience Growth Engine</h3>
+                    <p class="text-gray-700 mb-4">
+                        Turn every nomination into a growth opportunity. Fans become ambassadors who actively recruit new listeners to your show.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="mr-2">•</span>Viral nomination sharing</li>
+                        <li class="flex items-start"><span class="mr-2">•</span>New listener acquisition</li>
+                        <li class="flex items-start"><span class="mr-2">•</span>Community building tools</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-8 feature-card border border-red-200">
+                    <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-white text-xl">🤖</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">AI-Enhanced Insights</h3>
+                    <p class="text-gray-700 mb-4">
+                        Get intelligent recommendations on guest timing, topic trends, and audience sentiment to optimize your content strategy.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="mr-2">•</span>Optimal timing predictions</li>
+                        <li class="flex items-start"><span class="mr-2">•</span>Sentiment analysis</li>
+                        <li class="flex items-start"><span class="mr-2">•</span>Content gap identification</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-8 feature-card border border-indigo-200">
+                    <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-white text-xl">📊</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Measurable Impact</h3>
+                    <p class="text-gray-700 mb-4">
+                        Track real results: subscriber growth, listen rates, social shares, and fan engagement metrics that tie directly to your efforts.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="mr-2">•</span>Growth attribution tracking</li>
+                        <li class="flex items-start"><span class="mr-2">•</span>ROI measurement</li>
+                        <li class="flex items-start"><span class="mr-2">•</span>Performance analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works for Creators -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">How dLogos Works for Creators</h2>
+                <p class="text-xl text-gray-600">Simple setup, powerful results</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-12">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">
+                            1
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-4">Connect Your Show</h3>
+                            <p class="text-lg text-gray-600 mb-4">
+                                Quick setup: link your podcast feed, verify ownership, and customize your dLogos page with your branding and show description.
+                            </p>
+                            <div class="bg-white p-4 rounded-lg border border-gray-200">
+                                <div class="flex items-center space-x-3">
+                                    <div class="placeholder-circle"></div>
+                                    <div>
+                                        <p class="font-semibold">Your Podcast Name</p>
+                                        <p class="text-sm text-gray-600">Ready for nominations • 2.4K monthly downloads</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">
+                            2
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-4">Activate Your Audience</h3>
+                            <p class="text-lg text-gray-600 mb-4">
+                                Announce dLogos to your existing audience. Fans can now nominate dream guests and rally others to support their picks.
+                            </p>
+                            <div class="bg-white p-4 rounded-lg border border-gray-200">
+                                <p class="text-sm text-gray-600 mb-2">Latest Nomination</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="font-semibold">Naval Ravikant on Your Show</span>
+                                    <span class="text-purple-600 font-bold">847 votes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">
+                            3
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-4">Leverage the Momentum</h3>
+                            <p class="text-lg text-gray-600 mb-4">
+                                Use verified fan demand as social proof when reaching out to guests. Share nomination numbers and fan testimonials to secure bookings.
+                            </p>
+                            <div class="bg-white p-4 rounded-lg border border-gray-200">
+                                <p class="text-sm font-semibold mb-2">Guest Outreach Template Generated</p>
+                                <p class="text-sm text-gray-600 italic">"847 verified fans are requesting you as a guest..."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">
+                            4
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-4">Scale and Measure</h3>
+                            <p class="text-lg text-gray-600 mb-4">
+                                Track growth, analyze successful nominations, and let AI insights guide your guest strategy for maximum audience impact.
+                            </p>
+                            <div class="bg-white p-4 rounded-lg border border-gray-200">
+                                <div class="grid grid-cols-3 gap-4 text-center text-sm">
+                                    <div>
+                                        <p class="font-bold text-green-600">+32%</p>
+                                        <p class="text-gray-600">Growth</p>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-blue-600">23</p>
+                                        <p class="text-gray-600">Bookings</p>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-purple-600">847</p>
+                                        <p class="text-gray-600">Fans</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Creator Success Stories</h2>
+                <p class="text-xl text-gray-600">Real results from podcasters using dLogos</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Success Story 1 -->
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border border-green-200">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="placeholder-circle"></div>
+                        <div>
+                            <p class="font-bold">Tech Deep Dive</p>
+                            <p class="text-sm text-gray-600">3.2K monthly downloads</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4">
+                        "dLogos helped us book Vitalik Buterin after 2,400 fans nominated him. Our download numbers jumped 67% that month."
+                    </blockquote>
+                    <div class="flex justify-between text-sm">
+                        <span class="text-green-600 font-semibold">+67% growth</span>
+                        <span class="text-gray-500">Sarah Chen, Host</span>
+                    </div>
+                </div>
+
+                <!-- Success Story 2 -->
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border border-blue-200">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="placeholder-circle"></div>
+                        <div>
+                            <p class="font-bold">Future Forward</p>
+                            <p class="text-sm text-gray-600">8.1K monthly downloads</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4">
+                        "The social proof from fan nominations made guest outreach so much easier. We booked 5 dream guests in two months."
+                    </blockquote>
+                    <div class="flex justify-between text-sm">
+                        <span class="text-blue-600 font-semibold">5 dream bookings</span>
+                        <span class="text-gray-500">Mike Rodriguez, Host</span>
+                    </div>
+                </div>
+
+                <!-- Success Story 3 -->
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 border border-purple-200">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="placeholder-circle"></div>
+                        <div>
+                            <p class="font-bold">Startup Stories</p>
+                            <p class="text-sm text-gray-600">1.8K monthly downloads</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4">
+                        "Our fans nominated Marc Andreessen and the campaign went viral. We gained 800 new subscribers before the episode even aired."
+                    </blockquote>
+                    <div class="flex justify-between text-sm">
+                        <span class="text-purple-600 font-semibold">+800 subscribers</span>
+                        <span class="text-gray-500">Jessica Kim, Host</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnered Podcasts -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Partnered Podcasts</h2>
+                <p class="text-xl text-gray-600">Leading shows that trust their fans to shape conversations</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <!-- Podcast 1 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
+                    <p class="font-semibold">The Joe Rogan Experience</p>
+                    <p class="text-sm text-gray-600">Long-form conversations</p>
+                    <div class="flex items-center justify-center mt-2">
+                        <span class="text-xs text-purple-600 font-semibold">47 successful nominations</span>
+                    </div>
+                </div>
+
+                <!-- Podcast 2 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
+                    <p class="font-semibold">Lex Fridman Podcast</p>
+                    <p class="text-sm text-gray-600">AI, science & philosophy</p>
+                    <div class="flex items-center justify-center mt-2">
+                        <span class="text-xs text-purple-600 font-semibold">32 successful nominations</span>
+                    </div>
+                </div>
+
+                <!-- Podcast 3 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
+                    <p class="font-semibold">This Past Weekend</p>
+                    <p class="text-sm text-gray-600">Comedy meets depth</p>
+                    <div class="flex items-center justify-center mt-2">
+                        <span class="text-xs text-purple-600 font-semibold">28 successful nominations</span>
+                    </div>
+                </div>
+
+                <!-- Podcast 4 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
+                    <p class="font-semibold">Bankless</p>
+                    <p class="text-sm text-gray-600">Crypto & DeFi insights</p>
+                    <div class="flex items-center justify-center mt-2">
+                        <span class="text-xs text-purple-600 font-semibold">19 successful nominations</span>
+                    </div>
+                </div>
+
+                <!-- Podcast 5 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
+                    <p class="font-semibold">Huberman Lab</p>
+                    <p class="text-sm text-gray-600">Science & optimization</p>
+                    <div class="flex items-center justify-center mt-2">
+                        <span class="text-xs text-purple-600 font-semibold">24 successful nominations</span>
+                    </div>
+                </div>
+
+                <!-- Podcast 6 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
+                    <p class="font-semibold">Tim Ferriss Show</p>
+                    <p class="text-sm text-gray-600">World-class performers</p>
+                    <div class="flex items-center justify-center mt-2">
+                        <span class="text-xs text-purple-600 font-semibold">31 successful nominations</span>
+                    </div>
+                </div>
+
+                <!-- Podcast 7 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
+                    <p class="font-semibold">All-In Podcast</p>
+                    <p class="text-sm text-gray-600">Tech, economics & politics</p>
+                    <div class="flex items-center justify-center mt-2">
+                        <span class="text-xs text-purple-600 font-semibold">22 successful nominations</span>
+                    </div>
+                </div>
+
+                <!-- Podcast 8 -->
+                <div class="text-center group cursor-pointer">
+                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
+                    <p class="font-semibold">The Daily</p>
+                    <p class="text-sm text-gray-600">News that matters</p>
+                    <div class="flex items-center justify-center mt-2">
+                        <span class="text-xs text-purple-600 font-semibold">15 successful nominations</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-lg text-gray-600 mb-4">Want your podcast to join the movement?</p>
+                <button class="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold">
+                    Partner With Us →
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-purple-600 to-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Activate Your Audience?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Join growth-stage podcasters who are turning their listeners into active amplifiers. 
+                Transform scattered feedback into organized momentum.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <button class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    Join dLogos →
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">
+                    Schedule Demo
+                </button>
+            </div>
+            <p class="text-sm mt-6 opacity-90">
+                Free setup • No monthly fees • Start building momentum today
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="/assets/dLogos_gold.svg" alt="dLogos" class="w-8 h-8">
+                        <span class="font-bold text-xl">dLogos</span>
+                    </div>
+                    <p class="text-gray-400 mb-4 max-w-md">
+                        Turn your listeners into active amplifiers. The first audience-participation platform 
+                        that transforms fan feedback into organized, verifiable momentum.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4 text-gray-300">CREATORS</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Join Platform</a></li>
+                        <li><a href="#" class="hover:text-white transition">Success Stories</a></li>
+                        <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition">Demo</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4 text-gray-300">COMPANY</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>© 2024 dLogos. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -41,6 +41,20 @@
         .featured-card:hover {
             transform: translateY(-4px);
         }
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        .animate-scroll {
+            animation: scroll 20s linear infinite;
+        }
+        .animate-scroll:hover {
+            animation-play-state: paused;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -52,7 +66,9 @@
                 <span class="font-bold text-xl">dLogos</span>
             </div>
             <nav class="flex items-center space-x-6">
-                <a href="#" class="text-gray-600 hover:text-gray-900">ALL CAMPAIGNS</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">PODCASTS</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">SPEAKERS</a>
+                <a href="creators.html" class="text-gray-600 hover:text-gray-900">FOR PODCASTERS</a>
                 <a href="#" class="text-gray-600 hover:text-gray-900">ABOUT US</a>
                 <button class="bg-gray-900 text-white px-4 py-2 rounded">GET STARTED →</button>
             </nav>
@@ -60,217 +76,426 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-b from-gray-100 to-white py-24">
-        <div class="container mx-auto px-4 text-center">
-            <div class="mb-4">
-                <span class="text-sm uppercase tracking-wider text-gray-600">For Podcast Superfans</span>
-            </div>
-            <h1 class="text-6xl font-bold mb-6">
-                <span class="gradient-text">Shape the Dialogues <br>that Shape the Future.</span>
-            </h1>
-            <p class="text-2xl mb-4 font-semibold">
-                Go from passive listener to active shaper
-            </p>
-            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-                Nominate dream guests. Rally your community. Shape the conversations that matter.<br>
-                Your voice becomes the bridge between podcasts and their next iconic moments.
-            </p>
-            <div class="flex justify-center space-x-4 mb-12">
-                <button class="bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition">
-                    Start Shaping Conversations →
-                </button>
-                <button class="border-2 border-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
-                    See Active Campaigns
-                </button>
-            </div>
-            
-            <!-- Social Proof -->
-            <div class="flex justify-center items-center space-x-8 text-sm text-gray-600">
-                <div class="flex items-center space-x-2">
-                    <div class="placeholder-circle w-6 h-6"></div>
-                    <span><strong>12,847</strong> fans shaping podcasts</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <div class="placeholder-circle w-6 h-6"></div>
-                    <span><strong>437</strong> successful nominations</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <div class="placeholder-circle w-6 h-6"></div>
-                    <span><strong>89</strong> partnered podcasts</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works - Shape the Dialogues that Matter -->
-    <section class="py-20 bg-white">
+    <section class="bg-gradient-to-b from-gray-100 to-white py-16 lg:py-24">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">How It Works</h2>
-                <p class="text-xl text-gray-600">Shape the Dialogues that Matter</p>
-            </div>
-            
-            <!-- Value Props for Fans -->
-            <div class="max-w-6xl mx-auto space-y-20">
-                
-                <!-- Curate the Zeitgeist -->
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h3 class="text-3xl font-bold mb-4">🎛️ Curate the Zeitgeist</h3>
-                        <p class="text-lg text-gray-600 mb-6">
-                            Stop shouting into the void. Transform from passive listener to active cultural curator. 
-                            Nominate and vote for the guests who should shape tomorrow's conversations.
-                        </p>
-                        <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-start">
-                                <span class="mr-2">✓</span>
-                                <span>Champion guests who deserve the spotlight</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="mr-2">✓</span>
-                                <span>Rally your community around nominations</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="mr-2">✓</span>
-                                <span>Watch your picks become cultural moments</span>
-                            </li>
-                        </ul>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-left">
+                    <div class="mb-6">
                     </div>
-                    <div class="bg-gray-100 rounded-lg p-8">
-                        <div class="space-y-4">
-                            <div class="bg-white p-4 rounded shadow-sm">
-                                <div class="flex items-center justify-between mb-2">
-                                    <span class="text-sm text-gray-600">Your Nomination</span>
-                                    <span class="text-sm font-bold text-green-600">+2,847 votes</span>
-                                </div>
-                                <div class="flex items-center space-x-3">
-                                    <div class="placeholder-circle"></div>
-                                    <span class="font-semibold">Melinda Gates on This Past Weekend</span>
-                                </div>
-                            </div>
-                            <div class="bg-white p-4 rounded shadow-sm opacity-75">
-                                <div class="flex items-center space-x-3">
-                                    <div class="placeholder-circle"></div>
-                                    <span class="text-sm">Naval Ravikant on Joe Rogan</span>
-                                    <span class="ml-auto text-sm text-gray-500">+1,234</span>
-                                </div>
-                            </div>
-                            <div class="bg-white p-4 rounded shadow-sm opacity-50">
-                                <div class="flex items-center space-x-3">
-                                    <div class="placeholder-circle"></div>
-                                    <span class="text-sm">Vitalik Buterin on Lex Fridman</span>
-                                    <span class="ml-auto text-sm text-gray-500">+987</span>
-                                </div>
-                            </div>
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        <span class="gradient-text">Shape the Dialogues<br>that Shape the Future</span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl mb-6 font-semibold text-gray-800">
+                        Go from passive listener to active shaper
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                        Nominate dream guests. Rally your community. Shape the conversations that matter. 
+                        Your voice becomes the bridge between podcasts and their next iconic moments.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
+                        <button class="bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition">
+                            Start Shaping Dialogue →
+                        </button>
+                        <a href="creators.html" class="">
+                            <button class="border-2 border-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
+                                Partner with us
+                            </button>
+                        </a>
+                    </div>
+                    
+                    <!-- Social Proof -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-gray-600">
+                        <div class="flex items-center space-x-2">
+                            <div class="placeholder-circle w-6 h-6"></div>
+                            <span><strong>12,847</strong> fans shaping podcasts</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="placeholder-circle w-6 h-6"></div>
+                            <span><strong>437</strong> successful nominations</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="placeholder-circle w-6 h-6"></div>
+                            <span><strong>89</strong> partnered podcasts</span>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Giving Listeners a Voice -->
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div class="order-2 md:order-1 bg-gray-100 rounded-lg p-8">
-                        <div class="space-y-4">
-                            <div class="bg-white p-4 rounded shadow-sm">
-                                <div class="flex items-center justify-between mb-2">
-                                    <span class="text-sm font-semibold">Featured Comment</span>
-                                    <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Top Insight</span>
-                                </div>
-                                <p class="text-sm text-gray-700 italic">"This conversation would bridge the gap between tech innovation and social impact..."</p>
-                                <div class="flex items-center mt-2 text-xs text-gray-500">
-                                    <div class="placeholder-circle w-4 h-4 mr-1"></div>
-                                    <span>@thoughtleader</span>
-                                </div>
+                <!-- Right Graphic -->
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl p-8 relative overflow-hidden">
+                        <!-- Featured Nomination Card -->
+                        <div class="bg-white rounded-xl shadow-lg p-6 mb-4 transform rotate-3 hover:rotate-0 transition-transform">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-xs font-semibold text-purple-600 uppercase">🔥 Trending</span>
+                                <span class="text-xs text-gray-500">2 days left</span>
                             </div>
-                            <div class="bg-white p-4 rounded shadow-sm">
-                                <p class="text-sm font-semibold mb-2">Your Question Featured on Show</p>
-                                <p class="text-sm text-gray-600">"What's the one decision that changed your trajectory?"</p>
-                                <span class="text-xs text-green-600">Asked on Episode #247</span>
+                            <div class="flex items-center space-x-4 mb-4">
+                                <div class="placeholder-circle w-12 h-12"></div>
+                                <div class="text-center">
+                                    <span class="text-2xl">→</span>
+                                </div>
+                                <div class="placeholder-circle w-12 h-12"></div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="order-1 md:order-2">
-                        <h3 class="text-3xl font-bold mb-4">🎙️ Your Voice, Amplified</h3>
-                        <p class="text-lg text-gray-600 mb-6">
-                            Submit clips, leave thoughtful comments, ask probing questions. 
-                            The best contributions get featured, shared, and heard by millions.
-                        </p>
-                        <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-start">
-                                <span class="mr-2">✓</span>
-                                <span>Submit thought-provoking questions for guests</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="mr-2">✓</span>
-                                <span>Share powerful clips that spark discussions</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="mr-2">✓</span>
-                                <span>Get featured across podcast networks</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Be Known as a Champion -->
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h3 class="text-3xl font-bold mb-4">🏆 Become a Dialogue Champion</h3>
-                        <p class="text-lg text-gray-600 mb-6">
-                            Build your reputation as someone who surfaces important conversations. 
-                            Share your nominations, grow your influence, earn recognition.
-                        </p>
-                        <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-start">
-                                <span class="mr-2">✓</span>
-                                <span>Build your profile as a cultural tastemaker</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="mr-2">✓</span>
-                                <span>Earn badges and recognition for successful nominations</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="mr-2">✓</span>
-                                <span>Connect with like-minded dialogue champions</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="bg-gray-100 rounded-lg p-8">
-                        <div class="bg-white p-6 rounded shadow-sm text-center">
-                            <div class="placeholder-circle w-20 h-20 mx-auto mb-4"></div>
-                            <h4 class="font-bold mb-2">@culturecurator</h4>
-                            <p class="text-sm text-gray-600 mb-4">Dialogue Champion</p>
-                            <div class="grid grid-cols-3 gap-4 text-center">
-                                <div>
-                                    <p class="text-2xl font-bold">23</p>
-                                    <p class="text-xs text-gray-500">Nominations</p>
-                                </div>
-                                <div>
-                                    <p class="text-2xl font-bold">7</p>
-                                    <p class="text-xs text-gray-500">Successful</p>
-                                </div>
-                                <div>
-                                    <p class="text-2xl font-bold">14K</p>
-                                    <p class="text-xs text-gray-500">Influence</p>
-                                </div>
-                            </div>
-                            <div class="mt-4 flex justify-center space-x-2">
-                                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Tastemaker</span>
-                                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Top 5%</span>
+                            <h3 class="font-bold mb-2">Melinda Gates on This Past Weekend</h3>
+                            <div class="flex items-center justify-between">
+                                <span class="text-2xl font-bold text-green-600">8,421</span>
+                                <button class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-4 py-2 rounded text-sm font-semibold">
+                                    Support →
+                                </button>
                             </div>
                         </div>
+                        
+                        <!-- Background Cards -->
+                        <div class="bg-white rounded-lg shadow p-4 transform -rotate-2 opacity-80 absolute top-16 right-4">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <div class="placeholder-circle w-8 h-8"></div>
+                                <span class="font-semibold text-sm">Naval on Huberman</span>
+                            </div>
+                            <span class="text-lg font-bold">3,256</span>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow p-4 transform rotate-1 opacity-60 absolute bottom-8 left-4">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <div class="placeholder-circle w-8 h-8"></div>
+                                <span class="font-semibold text-sm">Vitalik on Bankless</span>
+                            </div>
+                            <span class="text-lg font-bold">2,847</span>
+                        </div>
+                        
+                        <!-- Floating elements -->
+                        <div class="absolute top-4 left-4 w-3 h-3 bg-purple-400 rounded-full opacity-60"></div>
+                        <div class="absolute top-12 right-16 w-2 h-2 bg-blue-400 rounded-full opacity-40"></div>
+                        <div class="absolute bottom-16 right-8 w-4 h-4 bg-purple-300 rounded-full opacity-50"></div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
 
-    <!-- Live Nominations Section -->
-    <section class="py-20 bg-gray-100">
+
+
+    <!-- Partnered Podcasts Carousel -->
+    <section class="py-16 bg-white border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold mb-2">Trusted by Leading Podcasts</h2>
+                <p class="text-gray-600">Where leading voices and passionate fans co-create the next big conversation </p>
+            </div>
+            
+            <!-- Podcast Carousel -->
+            <div class="relative overflow-hidden">
+                <div class="flex animate-scroll space-x-8 mb-8">
+                    <!-- First set of podcasts -->
+                    <div class="flex-shrink-0 text-center">
+                        <div class="placeholder-podcast mx-auto mb-3 opacity-80 hover:opacity-100 transition"></div>
+                        <p class="text-sm font-semibold">Joe Rogan Experience</p>
+                        <p class="text-xs text-gray-500">47 nominations</p>
+                    </div>
+                    <div class="flex-shrink-0 text-center">
+                        <div class="placeholder-podcast mx-auto mb-3 opacity-80 hover:opacity-100 transition"></div>
+                        <p class="text-sm font-semibold">Lex Fridman Podcast</p>
+                        <p class="text-xs text-gray-500">32 nominations</p>
+                    </div>
+                    <div class="flex-shrink-0 text-center">
+                        <div class="placeholder-podcast mx-auto mb-3 opacity-80 hover:opacity-100 transition"></div>
+                        <p class="text-sm font-semibold">This Past Weekend</p>
+                        <p class="text-xs text-gray-500">28 nominations</p>
+                    </div>
+                    <div class="flex-shrink-0 text-center">
+                        <div class="placeholder-podcast mx-auto mb-3 opacity-80 hover:opacity-100 transition"></div>
+                        <p class="text-sm font-semibold">Huberman Lab</p>
+                        <p class="text-xs text-gray-500">24 nominations</p>
+                    </div>
+                    <div class="flex-shrink-0 text-center">
+                        <div class="placeholder-podcast mx-auto mb-3 opacity-80 hover:opacity-100 transition"></div>
+                        <p class="text-sm font-semibold">Tim Ferriss Show</p>
+                        <p class="text-xs text-gray-500">31 nominations</p>
+                    </div>
+                    <div class="flex-shrink-0 text-center">
+                        <div class="placeholder-podcast mx-auto mb-3 opacity-80 hover:opacity-100 transition"></div>
+                        <p class="text-sm font-semibold">All-In Podcast</p>
+                        <p class="text-xs text-gray-500">22 nominations</p>
+                    </div>
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="flex-shrink-0 text-center">
+                        <div class="placeholder-podcast mx-auto mb-3 opacity-80 hover:opacity-100 transition"></div>
+                        <p class="text-sm font-semibold">Joe Rogan Experience</p>
+                        <p class="text-xs text-gray-500">47 nominations</p>
+                    </div>
+                    <div class="flex-shrink-0 text-center">
+                        <div class="placeholder-podcast mx-auto mb-3 opacity-80 hover:opacity-100 transition"></div>
+                        <p class="text-sm font-semibold">Lex Fridman Podcast</p>
+                        <p class="text-xs text-gray-500">32 nominations</p>
+                    </div>
+                    <div class="flex-shrink-0 text-center">
+                        <div class="placeholder-podcast mx-auto mb-3 opacity-80 hover:opacity-100 transition"></div>
+                        <p class="text-sm font-semibold">This Past Weekend</p>
+                        <p class="text-xs text-gray-500">28 nominations</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Partner CTA -->
+            <div class="text-center">
+                <a href="creators.html" class="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition inline-block">
+                    Learn More →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold mb-4">Live Nominations Happening Now</h2>
-                <p class="text-xl text-gray-600">Join the movement. Every vote counts.</p>
+                <h2 class="text-4xl font-bold mb-4">How It Works</h2>
+            </div>
+            
+            <div class="max-w-5xl mx-auto">
+                <!-- Three Steps -->
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Step 1 -->
+                    <div class="relative">
+                        <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">1</div>
+                        <h3 class="text-xl font-bold mb-4">Shape the zeitgeist</h3>
+                        <p class="text-gray-600 mb-4">Transform from passive listener to active cultural curator</p>
+                        <div class="bg-gray-100 rounded-lg p-4">
+                            <div class="bg-white p-3 rounded shadow-sm">
+                                <div class="flex items-center space-x-2">
+                                    <div class="placeholder-circle w-6 h-6"></div>
+                                    <span class="text-sm font-semibold">Melinda Gates on This Past Weekend</span>
+                                </div>
+                                <span class="text-xs text-green-600">+2,847 votes</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="relative">
+                        <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">2</div>
+                        <h3 class="text-xl font-bold mb-4">Engage deeper with your favorite pods</h3>
+                        <p class="text-gray-600 mb-4">Submit clips, comments, and questions that get featured</p>
+                        <div class="bg-gray-100 rounded-lg p-4">
+                            <div class="bg-white p-3 rounded shadow-sm">
+                                <p class="text-xs font-semibold mb-1">Your Question Featured</p>
+                                <p class="text-xs text-gray-600">"What's the one decision that changed your trajectory?"</p>
+                                <span class="text-xs text-green-600">Episode #247</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="relative">
+                        <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">3</div>
+                        <h3 class="text-xl font-bold mb-4">Champion timely conversations</h3>
+                        <p class="text-gray-600 mb-4">Build your reputation as a cultural tastemaker</p>
+                        <div class="bg-gray-100 rounded-lg p-4">
+                            <div class="bg-white p-3 rounded shadow-sm text-center">
+                                <div class="placeholder-circle w-12 h-12 mx-auto mb-2"></div>
+                                <p class="text-xs font-bold">@culturecurator</p>
+                                <div class="grid grid-cols-2 gap-2 text-center mt-2">
+                                    <div>
+                                        <p class="text-lg font-bold">23</p>
+                                        <p class="text-xs text-gray-500">Nominations</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-lg font-bold">7</p>
+                                        <p class="text-xs text-gray-500">Successful</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Learn More Section -->
+                <div class="text-center mt-12">
+                    <details class="bg-white rounded-lg shadow-sm max-w-4xl mx-auto">
+                        <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="text-blue-600 font-semibold">Frequently Asked Questions</span>
+                            <svg class="w-4 h-4 text-blue-600 transform transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </summary>
+                        <div class="px-6 pb-6 space-y-3">
+                            <!-- FAQ Content -->
+                            <div class="space-y-3">
+                                <details class="border-l-4 border-purple-500 pl-4 group">
+                                    <summary class="font-semibold cursor-pointer hover:text-purple-600 transition flex items-center justify-between">
+                                        <span>What is dLogos?</span>
+                                        <svg class="w-4 h-4 text-purple-500 transform transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </summary>
+                                    <p class="text-gray-700 text-sm mt-2 text-left">
+                                        dLogos is the first audience-participation platform that turns podcast guest selection into a public, trackable movement. 
+                                        We empower fans to nominate dream guests, rally their communities, and shape the conversations that matter.
+                                    </p>
+                                </details>
+                                
+                                <details class="border-l-4 border-purple-500 pl-4 group">
+                                    <summary class="font-semibold cursor-pointer hover:text-purple-600 transition flex items-center justify-between">
+                                        <span>How does the nomination process work?</span>
+                                        <svg class="w-4 h-4 text-purple-500 transform transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </summary>
+                                    <p class="text-gray-700 text-sm mt-2 text-left">
+                                        Connect your X account, browse partnered podcasts, and nominate your dream guest. Share your nomination to gather supporters. 
+                                        When nominations reach critical mass, podcasts take notice and conversations happen.
+                                    </p>
+                                </details>
+                                
+                                <details class="border-l-4 border-purple-500 pl-4 group">
+                                    <summary class="font-semibold cursor-pointer hover:text-purple-600 transition flex items-center justify-between">
+                                        <span>Do podcasts actually listen to nominations?</span>
+                                        <svg class="w-4 h-4 text-purple-500 transform transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </summary>
+                                    <p class="text-gray-700 text-sm mt-2 text-left">
+                                        Yes! We've facilitated 437+ successful nominations that became real episodes. Our partnered podcasts actively monitor nominations 
+                                        because they value authentic fan input.
+                                    </p>
+                                </details>
+                                
+                                <details class="border-l-4 border-purple-500 pl-4 group">
+                                    <summary class="font-semibold cursor-pointer hover:text-purple-600 transition flex items-center justify-between">
+                                        <span>How do I become a Dialogue Champion?</span>
+                                        <svg class="w-4 h-4 text-purple-500 transform transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </summary>
+                                    <p class="text-gray-700 text-sm mt-2 text-left">
+                                        Start nominating guests and sharing your picks. As your nominations gain support and some become real episodes, 
+                                        you'll earn recognition, badges, and influence within the community.
+                                    </p>
+                                </details>
+                                
+                                <details class="border-l-4 border-purple-500 pl-4 group">
+                                    <summary class="font-semibold cursor-pointer hover:text-purple-600 transition flex items-center justify-between">
+                                        <span>Is it free to participate?</span>
+                                        <svg class="w-4 h-4 text-purple-500 transform transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </summary>
+                                    <p class="text-gray-700 text-sm mt-2 text-left">
+                                        Yes! Creating nominations, voting, and participating in the community is completely free. 
+                                        We believe in democratizing podcast curation and making it accessible to all fans who want to shape culture.
+                                    </p>
+                                </details>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+                
+                <!-- CTA Section -->
+                <div class="text-center mt-8">
+                    <button class="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+                        Start Shaping Dialogue →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Campaigns Section -->
+    <!-- <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Explore live nominations now</h2>
+                <p class="text-xl text-gray-600">Join other podcast listeners who are shaping the conversation</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-red-100 to-orange-100 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="placeholder-circle w-20 h-20 mx-auto mb-2"></div>
+                                <span class="text-2xl">→</span>
+                                <div class="placeholder-circle w-20 h-20 mx-auto mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold mb-2">Get Melinda Gates on This Past Weekend</h3>
+                        <p class="text-sm text-gray-600 mb-4">Bridging philanthropy and comedy for important conversations</p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-gray-500">
+                                <span>8,421 supporters</span>
+                            </div>
+                            <div class="text-sm font-semibold text-green-600">
+                                87% to goal
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-blue-100 to-purple-100 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="placeholder-circle w-20 h-20 mx-auto mb-2"></div>
+                                <span class="text-2xl">→</span>
+                                <div class="placeholder-circle w-20 h-20 mx-auto mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold mb-2">Naval Ravikant on Huberman Lab</h3>
+                        <p class="text-sm text-gray-600 mb-4">Philosophy meets science for optimal living insights</p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-gray-500">
+                                <span>6,234 supporters</span>
+                            </div>
+                            <div class="text-sm font-semibold text-blue-600">
+                                73% to goal
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-green-100 to-teal-100 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="placeholder-circle w-20 h-20 mx-auto mb-2"></div>
+                                <span class="text-2xl">→</span>
+                                <div class="placeholder-circle w-20 h-20 mx-auto mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold mb-2">Vitalik Buterin on Bankless</h3>
+                        <p class="text-sm text-gray-600 mb-4">Ethereum's future from the creator himself</p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-gray-500">
+                                <span>4,891 supporters</span>
+                            </div>
+                            <div class="text-sm font-semibold text-purple-600">
+                                62% to goal
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button class="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+                    Explore All Campaigns
+                </button>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Live Nominations Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Explore live nominations now</h2>
+                <p class="text-xl text-gray-600">Join other podcast listeners who are shaping the conversation</p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -350,8 +575,115 @@
         </div>
     </section>
 
+    <!-- Podcast Creator Section -->
+    <section class="py-16 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div>
+                    <div class="mb-4">
+                        <span class="text-sm font-semibold text-purple-400 uppercase tracking-wider">For Podcast Creators</span>
+                    </div>
+                    <h2 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                        Turn Your Listeners Into <span class="text-purple-400">Active Amplifiers</span>
+                    </h2>
+                    <p class="text-xl mb-6 text-gray-300">
+                        Stop relying on scattered social comments and private polls. Transform fan feedback into public, verifiable signals that help you book better guests and grow your audience.
+                    </p>
+                    
+                    <!-- Key Benefits -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Visible Fan Demand</p>
+                                <p class="text-gray-400 text-sm">Turn audience requests into public, shareable momentum</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Guest Booking Leverage</p>
+                                <p class="text-gray-400 text-sm">Show potential guests the verified audience demand</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Cultural Positioning</p>
+                                <p class="text-gray-400 text-sm">Place your show in the zeitgeist with trending conversations</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="creators.html" class="bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-700 transition inline-block text-center">
+                            Learn More for Podcasters →
+                        </a>
+                        <button class="border-2 border-purple-400 text-purple-400 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-400 hover:text-gray-900 transition">
+                            See Success Stories
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Right Visual -->
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl p-8 relative overflow-hidden border border-gray-600">
+                        <!-- Stats Card -->
+                        <div class="bg-white rounded-xl shadow-lg p-6 mb-6 text-gray-900">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-sm font-semibold text-purple-600">Your Show Stats</span>
+                                <span class="text-xs text-green-600 font-semibold">↗ Growing</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4 text-center">
+                                <div>
+                                    <p class="text-2xl font-bold text-purple-600">847</p>
+                                    <p class="text-xs text-gray-600">Fan Nominations</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold text-green-600">+32%</p>
+                                    <p class="text-xs text-gray-600">Audience Growth</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Nomination Example -->
+                        <div class="bg-gray-600 rounded-lg p-4 text-white">
+                            <div class="flex items-center space-x-3 mb-3">
+                                <div class="placeholder-circle w-10 h-10 bg-gray-500"></div>
+                                <div>
+                                    <p class="font-semibold text-sm">Guest Request</p>
+                                    <p class="text-xs text-gray-300">4,291 fan votes</p>
+                                </div>
+                            </div>
+                            <p class="text-sm font-medium">Naval Ravikant on Your Show</p>
+                            <div class="mt-3 flex justify-between items-center">
+                                <span class="text-xs text-purple-400">Trending #1</span>
+                                <button class="bg-purple-600 text-white px-3 py-1 rounded text-xs font-semibold">
+                                    Book Guest
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating elements -->
+                        <div class="absolute top-4 right-4 w-3 h-3 bg-purple-400 rounded-full opacity-60"></div>
+                        <div class="absolute bottom-4 left-4 w-2 h-2 bg-purple-300 rounded-full opacity-40"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- Success Stories -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold mb-4">Success Stories</h2>
@@ -412,7 +744,7 @@
             </div>
             
             <div class="text-center mt-12">
-                <p class="text-lg font-semibold mb-4">Your nomination could be next</p>
+                <p class="text-lg font-semibold mb-4">Your nomination could catalyze the next groundbreaking dialogue</p>
                 <button class="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold">
                     Start a Nomination →
                 </button>
@@ -442,114 +774,15 @@
         </div>
     </section>
 
-    <!-- Partnered Podcasts -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold mb-4">Partnered Podcasts</h2>
-                <p class="text-xl text-gray-600">Leading shows that trust their fans to shape conversations</p>
-            </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-                <!-- Podcast 1 -->
-                <div class="text-center group cursor-pointer">
-                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
-                    <p class="font-semibold">The Joe Rogan Experience</p>
-                    <p class="text-sm text-gray-600">Long-form conversations</p>
-                    <div class="flex items-center justify-center mt-2">
-                        <span class="text-xs text-purple-600 font-semibold">47 successful nominations</span>
-                    </div>
-                </div>
-
-                <!-- Podcast 2 -->
-                <div class="text-center group cursor-pointer">
-                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
-                    <p class="font-semibold">Lex Fridman Podcast</p>
-                    <p class="text-sm text-gray-600">AI, science & philosophy</p>
-                    <div class="flex items-center justify-center mt-2">
-                        <span class="text-xs text-purple-600 font-semibold">32 successful nominations</span>
-                    </div>
-                </div>
-
-                <!-- Podcast 3 -->
-                <div class="text-center group cursor-pointer">
-                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
-                    <p class="font-semibold">This Past Weekend</p>
-                    <p class="text-sm text-gray-600">Comedy meets depth</p>
-                    <div class="flex items-center justify-center mt-2">
-                        <span class="text-xs text-purple-600 font-semibold">28 successful nominations</span>
-                    </div>
-                </div>
-
-                <!-- Podcast 4 -->
-                <div class="text-center group cursor-pointer">
-                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
-                    <p class="font-semibold">Bankless</p>
-                    <p class="text-sm text-gray-600">Crypto & DeFi insights</p>
-                    <div class="flex items-center justify-center mt-2">
-                        <span class="text-xs text-purple-600 font-semibold">19 successful nominations</span>
-                    </div>
-                </div>
-
-                <!-- Podcast 5 -->
-                <div class="text-center group cursor-pointer">
-                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
-                    <p class="font-semibold">Huberman Lab</p>
-                    <p class="text-sm text-gray-600">Science & optimization</p>
-                    <div class="flex items-center justify-center mt-2">
-                        <span class="text-xs text-purple-600 font-semibold">24 successful nominations</span>
-                    </div>
-                </div>
-
-                <!-- Podcast 6 -->
-                <div class="text-center group cursor-pointer">
-                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
-                    <p class="font-semibold">Tim Ferriss Show</p>
-                    <p class="text-sm text-gray-600">World-class performers</p>
-                    <div class="flex items-center justify-center mt-2">
-                        <span class="text-xs text-purple-600 font-semibold">31 successful nominations</span>
-                    </div>
-                </div>
-
-                <!-- Podcast 7 -->
-                <div class="text-center group cursor-pointer">
-                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
-                    <p class="font-semibold">All-In Podcast</p>
-                    <p class="text-sm text-gray-600">Tech, economics & politics</p>
-                    <div class="flex items-center justify-center mt-2">
-                        <span class="text-xs text-purple-600 font-semibold">22 successful nominations</span>
-                    </div>
-                </div>
-
-                <!-- Podcast 8 -->
-                <div class="text-center group cursor-pointer">
-                    <div class="placeholder-podcast mx-auto mb-4 group-hover:scale-105 transition"></div>
-                    <p class="font-semibold">The Daily</p>
-                    <p class="text-sm text-gray-600">News that matters</p>
-                    <div class="flex items-center justify-center mt-2">
-                        <span class="text-xs text-purple-600 font-semibold">15 successful nominations</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-12">
-                <p class="text-lg text-gray-600 mb-4">Want your podcast to join the movement?</p>
-                <button class="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold">
-                    Partner With Us →
-                </button>
-            </div>
-        </div>
-    </section>
-
 
 
     <!-- FAQ -->
-    <section class="py-20 bg-white">
+    <!-- <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4 max-w-4xl">
             <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
             
             <div class="space-y-4">
-                <details class="bg-gray-50 rounded-lg p-6 cursor-pointer group">
+                <details class="bg-white rounded-lg p-6 cursor-pointer group">
                     <summary class="flex justify-between items-center font-semibold text-lg">
                         <span>What is dLogos?</span>
                         <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -560,7 +793,7 @@
                     </p>
                 </details>
                 
-                <details class="bg-gray-50 rounded-lg p-6 cursor-pointer group">
+                <details class="bg-white rounded-lg p-6 cursor-pointer group">
                     <summary class="flex justify-between items-center font-semibold text-lg">
                         <span>How does the nomination process work?</span>
                         <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -571,7 +804,7 @@
                     </p>
                 </details>
                 
-                <details class="bg-gray-50 rounded-lg p-6 cursor-pointer group">
+                <details class="bg-white rounded-lg p-6 cursor-pointer group">
                     <summary class="flex justify-between items-center font-semibold text-lg">
                         <span>Do podcasts actually listen to nominations?</span>
                         <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -582,7 +815,7 @@
                     </p>
                 </details>
                 
-                <details class="bg-gray-50 rounded-lg p-6 cursor-pointer group">
+                <details class="bg-white rounded-lg p-6 cursor-pointer group">
                     <summary class="flex justify-between items-center font-semibold text-lg">
                         <span>How do I become a Dialogue Champion?</span>
                         <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -593,7 +826,7 @@
                     </p>
                 </details>
                 
-                <details class="bg-gray-50 rounded-lg p-6 cursor-pointer group">
+                <details class="bg-white rounded-lg p-6 cursor-pointer group">
                     <summary class="flex justify-between items-center font-semibold text-lg">
                         <span>Is it free to participate?</span>
                         <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -605,7 +838,7 @@
                 </details>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="bg-black text-white py-16">
